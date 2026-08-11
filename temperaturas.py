@@ -18,3 +18,5 @@ temperaturas.append(temperatura3)
 #Se crea un print en el cual indique la temperatura maxima(max) y la temperatura minima(min) que hay en la lista 
 print(f'La temperatura mas alta es: ', max(temperaturas))
 print(f'La temperatura mas alta es: ', min(temperaturas))
+for temperatura in temperaturas:
+    print(temperatura)
