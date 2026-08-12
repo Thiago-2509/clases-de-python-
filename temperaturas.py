@@ -10,11 +10,20 @@
 temperaturas = []
 #Se crearon tres variables (temperatura1,2,3) en las cuales el usuario agrega las teperaturas y con .append se agrega a la lista
 temperatura1 = float(input('Ingrese la primer temperatura: '))
-temperaturas.append(temperatura1)
+if temperatura1 >= 20:
+    temperaturas.append(temperatura1)
+elif temperatura1 < 20:
+    print('No se admiten temperaturas menores a 20 grados')
 temperatura2 = float(input('Ingrese la segunda temperatura: '))
-temperaturas.append(temperatura2)
+if temperatura2 >= 20:
+    temperaturas.append(temperatura2)
+elif temperatura2 < 20:
+    print('No se admiten temperaturas menores a 20 grados')
 temperatura3 = float(input('Ingrese la tercer temperatura: '))
-temperaturas.append(temperatura3)
+if temperatura3 >= 20:
+    temperaturas.append(temperatura3)
+elif temperatura3 < 20:
+    print('No se admiten temperaturas menores a 20 grados')
 #Se crea un print en el cual indique la temperatura maxima(max) y la temperatura minima(min) que hay en la lista 
 print(f'La temperatura mas alta es: ', max(temperaturas))
 print(f'La temperatura mas alta es: ', min(temperaturas))

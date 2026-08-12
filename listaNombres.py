@@ -8,8 +8,5 @@
 #Se creo un alista con cinco nombres de compañeros
 nombres = ['Juan','Luis','Camila','Miguel','Grace']
 #Se coloco un print para que salude a cada uno 
-print(f'Hola,', nombres [0])
-print(f'Hola,', nombres [1])
-print(f'Hola,', nombres [2])
-print(f'Hola,', nombres [3])
-print(f'Hola,', nombres [4])
+for nombre in nombres:
+    print(f'Hola:',nombre)
